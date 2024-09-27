@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima, Pronóstico y Criptomonedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Buscar Clima y Pronóstico</h1>
+            <form id="climaForm">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="resultado">
+                <h2>Clima Actual</h2>
+                <p id="clima"></p>
+                <h2>Pronóstico</h2>
+                <p id="pronostico"></p>
+            </div>
+        </div>
+        
+        <div>
+            <h1>Precio y Historial de Criptomonedas</h1>
+            <form id="criptoForm">
+                <label for="criptomoneda">Criptomoneda:</label>
+                <input type="text" id="criptomoneda" name="criptomoneda" required>
+                <label for="valorObjetivo">Alertar Valor:</label>
+                <input type="text" id="valorObjetivo" name="valorObjetivo">
+                <button type="submit">Buscar</button>
+                <button type="button" id="alertarBtn">Alertar</button>
+            </form>
+            <div id="resultadoCripto">
+                <h2>Precio Actual</h2>
+                <p id="precio"></p>
+                <h2>Historial de Precios</h2>
+                <ul id="historico"></ul>
+                <p id="alerta"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
