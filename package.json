@@ -5,6 +5,7 @@
   
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.js",
+    "install": "npm install --omit=dev",
     "test": "echo \"Error: no test specified\" && exit 1"
 
   },
